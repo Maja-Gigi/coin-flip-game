@@ -1,7 +1,15 @@
 let randomNumber = Math.random();
+let result;
+let guess = 'heads' || 'tails';
 
 if (randomNumber < 0.5) {
-  console.log('heads');
+  result = 'headas';
 } else {
-  console.log('tails');
+  result = 'tails';
+}
+
+if (guess === result) {
+  console.log('you win!');  
+} else {
+  console.log('you lose!');
 }
